@@ -19,7 +19,6 @@
 		57609C701758E74A00F06184 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57609C6F1758E74A00F06184 /* MainViewController.m */; };
 		57609C731758E8B500F06184 /* FakeStickyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57609C721758E8B500F06184 /* FakeStickyViewController.m */; };
 		57609C761758E96300F06184 /* FakeRevealController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57609C751758E96300F06184 /* FakeRevealController.m */; };
-		57609C791758F59000F06184 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57609C781758F59000F06184 /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,8 +41,6 @@
 		57609C721758E8B500F06184 /* FakeStickyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeStickyViewController.m; sourceTree = "<group>"; };
 		57609C741758E96300F06184 /* FakeRevealController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeRevealController.h; sourceTree = "<group>"; };
 		57609C751758E96300F06184 /* FakeRevealController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeRevealController.m; sourceTree = "<group>"; };
-		57609C771758F59000F06184 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		57609C781758F59000F06184 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +96,6 @@
 				57609C721758E8B500F06184 /* FakeStickyViewController.m */,
 				57609C741758E96300F06184 /* FakeRevealController.h */,
 				57609C751758E96300F06184 /* FakeRevealController.m */,
-				57609C771758F59000F06184 /* TestViewController.h */,
-				57609C781758F59000F06184 /* TestViewController.m */,
 			);
 			path = DelegateHopSchotcher;
 			sourceTree = "<group>";
@@ -189,7 +184,6 @@
 				57609C701758E74A00F06184 /* MainViewController.m in Sources */,
 				57609C731758E8B500F06184 /* FakeStickyViewController.m in Sources */,
 				57609C761758E96300F06184 /* FakeRevealController.m in Sources */,
-				57609C791758F59000F06184 /* TestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +298,7 @@
 				57609C6D1758E73100F06184 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

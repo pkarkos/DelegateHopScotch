@@ -10,7 +10,7 @@
 #import "FakeRevealController.h"
 #import "MainViewController.h"
 #import "FakeStickyViewController.h"
-#import "TestViewController.h"
+
 
 @implementation AppDelegate
 
@@ -19,11 +19,10 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     [self setFakeRevealController:[[FakeRevealController alloc] init]];
-//    FakeStickyViewController *fSVC = [[FakeStickyViewController alloc] init];
-    TestViewController *fSVC = [[TestViewController alloc] init];
-//    MainViewController *mVC = [[MainViewController alloc] initWithRootViewController:fSVC];
-    UINavigationController *mVC = [[UINavigationController alloc] initWithRootViewController:fSVC];
-    [self.fakeRevealController setMVC:mVC];
+ // FakeStickyViewController *fSVC = [[FakeStickyViewController alloc] init];
+
+    //UINavigationController *mVC = [[UINavigationController alloc] initWithRootViewController:fSVC];
+    
     [self.window setRootViewController:self.fakeRevealController];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

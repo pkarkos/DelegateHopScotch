@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+
 @class MainViewController;
+@class FakeStickyViewController;
 
 @interface FakeRevealController : UIViewController <UIScrollViewDelegate>
 
-@property (strong, nonatomic) UINavigationController *mVC;
+@property (strong, nonatomic) MainViewController *mVC;
+@property (strong, nonatomic) FakeStickyViewController *fakeStickyVC;
 
 @end

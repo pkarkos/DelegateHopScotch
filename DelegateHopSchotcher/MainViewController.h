@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UINavigationController
+@class FakeStickyViewController;
+
+@interface MainViewController : UINavigationController <UIScrollViewDelegate>
+
+//@property (strong, nonatomic) FakeStickyViewController *fakeStickyVC;
 
 @end

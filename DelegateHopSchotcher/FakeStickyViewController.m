@@ -8,10 +8,12 @@
 
 #import "FakeStickyViewController.h"
 
+
+
 @interface FakeStickyViewController ()
 
-@property (strong, nonatomic) UIScrollView *view;
-
+//@property (strong, nonatomic) UIView *NView;
+@property (strong, nonatomic) UIScrollView *scrollView;
 @end
 
 @implementation FakeStickyViewController
@@ -20,15 +22,16 @@
 {
     self = [super init];
     if (self) {
-        UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 568)];
-        [scrollView setBackgroundColor:[UIColor blackColor]];
-        [scrollView setAlpha:0.5f];
-        [scrollView setContentSize:CGSizeMake(400, 600)];
-        [scrollView setBounces:YES];
-        [self setView:scrollView];
-//        UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-//        [btn setFrame:CGRectMake(20, 20, 60, 40)];
-//        [self.view addSubview:btn];
+        //self.NView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 400, 460)];
+        //UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 568)];
+        self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 400, 600)];
+        [self.scrollView setBackgroundColor:[UIColor blackColor]];
+        [self.scrollView setAlpha:0.50f];
+        [self.scrollView setContentSize:CGSizeMake(400, 600)];
+        [self.scrollView setBounces:YES];
+
+        [self setView:self.scrollView];
+        [self.scrollView setDelegate:(id<UIScrollViewDelegate>)self.parentViewController];
     }
     return self;
 }

@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface FakeStickyViewController : UIViewController
 
-- (UIScrollView *)view;
+- (UIView *)NView;
+- (UIScrollView *)scrollView;
+
 
 @end
